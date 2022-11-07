@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link 
+        rel="stylesheet" 
+        href="./main.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./header.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./footer.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./basket.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./profile.css"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" 
+        rel="stylesheet"
+    >
+</head>
+<body>
+    <div class="main-conteiner">
+        <header>
+            <div class="header-main-wrapper">
+                <div class="header-main">
+                    <a href="./main.html">
+                        <img 
+                            class="logo"
+                            src="./assets/svg/logo.svg" 
+                            alt="logo"
+                        >
+                    </a>
+                    <div class="lk_number_basket-wrapper">
+                        <a href="./profile.html" class="lk">
+                            <button class="lk-button"> 
+                                <img 
+                                    class="header-img" 
+                                    src="./assets/lk-ava.jpg" 
+                                    alt="avatar"
+                                >
+                            </button>
+                            <div class="title-wrapper">
+                                <p class="header-title">Мой Кабинет</p>
+                                <p class="header-description come-in">Войти</p>
+                            </div>
+                        </a>
+                        <div class="number">
+                            <img 
+                                class="header-img" 
+                                src="./assets/telefon.jpg" 
+                                alt="telefon"
+                            >
+                            <div class="title-wrapper">
+                                <p class="header-title">8 904 771-14-30</p>
+                                <p class="header-description">Пн-Чт 9–18, Пт 9–17</p>
+                            </div>
+                        </div>
+                        <a href="./basket-1.html" class="basket">
+                            <button class="basket-img-wrapper">
+                                <img src="./assets/svg/basket.svg" alt="basket">
+                            </button>
+                            <div class="title-wrapper">
+                                <p class="header-title">Корзина</p>
+                                <p class="header-description">0 ₽</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-wrapper">
+                <div class="header-nav">
+                    <form 
+                        class="search"
+                        action=""
+                        method="get"
+                    >
+                        <a 
+                            class="search-button" 
+                            href="./catalog.html"
+                        >
+                            <img src="./assets/svg/katalog.svg" alt="каталог">
+                            <p class="catalog">Каталог</p>
+                        </a>                                
+                        <input  
+                            class="search-field" 
+                            type="search" 
+                            placeholder="Найти товар"
+                        >
+                    </form>
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="list">
+                                <a 
+                                    href="./about_Us.html" 
+                                    class="nav-link"
+                                >
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./news.html" 
+                                    class="nav-link"
+                                >
+                                    Новости и акции
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./coop_prices.html" 
+                                    class="nav-link"
+                                >
+                                    Сотрудничество и цены
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./ad-materials.html" 
+                                    class="nav-link"
+                                >
+                                    Рекламные материалы
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./contact.html" 
+                                    class="nav-link"
+                                >
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="torso">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs-link" href="./main.html">Главная</a>
+                <span class="breadcrumbs-this-page"> &#62; Корзина</span>
+            </div>
+            <h1 class="my-order">Мой заказ</h1>
+            <div class="order-step">
+                <p class="step-1 checked">Состав заказа</p>
+                <p class="step-2 current-step">Данные клиента</p>
+                <p class="step-3">Заказ оформлен</p>
+            </div>
+            <div class="customer-data-wrapper">
+                <div class="customer-data">
+                    <div class="new-customer-checkbox">
+                        <input 
+                            id="new-customer" 
+                            type="radio" 
+                            name="customer" 
+                            checked 
+                            hidden
+                        >
+                        <input 
+                            id="old-customer" 
+                            type="radio" 
+                            name="customer" 
+                            hidden
+                        >
+                        <label class="new-customer" for="new-customer">
+                            Я новый покупатель
+                        </label>
+                        <label class="old-customer" for="old-customer">
+                            У меня есть аккаунт
+                        </label>
+                    </div>
+                    <form action="" class="profile-main-form">
+                        <h3 class="profile-contact-info">Контактная информация</h3>
+                        <p class="profile-contact-info-desc">
+                            Наша компания работает исключительно с юридическими лицами (в том числе ИП). <br>
+                            Оплата заказа возможна только в форме безналичного расчёта.
+                        </p>
+                        <div class="altitle">
+                            <input 
+                                type="text" 
+                                class="profile-organization"
+                                placeholder="Организация"
+                            >
+                            <div class="after-line-title-1"></div>
+                        </div>
+                        <div class="altitle">
+                            <input 
+                                type="text" 
+                                class="profile-user-name"
+                                placeholder="Контактное лицо"
+                            >
+                            <div class="after-line-title-2"></div>
+                        </div>
+                        <div class="altitle">
+                            <input 
+                                type="text" 
+                                class="profile-user-job"
+                                placeholder="Должность"
+                            >
+                            <div class="after-line-title-3"></div>
+                        </div>
+                        <div class="altitle">
+                            <input 
+                                type="tel" 
+                                class="profile-user-phonenumber"
+                                placeholder="Телефон"
+                            >
+                            <div class="after-line-title-4"></div>
+                        </div>
+                        <div class="altitle">
+                            <input 
+                                type="email" 
+                                class="profile-user-email"
+                                placeholder="Эл. почта"
+                            >
+                            <div class="after-line-title-5"></div>
+                        </div>
+                        <h3 class="profile-adress-title">Адрес</h3>
+                        <div class="section-compl-before">
+                            <div class="after-line-title-6"></div>
+                            <select 
+                                name="country" 
+                                id="country-select" 
+                                class="profile-country-selection"
+                            >
+                                <option value="country">Страна</option>                        
+                                <option value="russia">Россия</option>
+                                <option value="ukraine">Украина</option>
+                                <option value="Kazaqstan">Казахстан</option>
+                                <option value="Belarus">Беларусь</option>
+                            </select>
+                        </div>  
+                        <div class="section-compl-before">
+                            <div class="after-line-title-7"></div>  
+                            <select 
+                                name="region" 
+                                id="region-select" 
+                                class="profile-region-selection"
+                            >
+                                <option value="region">Регион</option>                        
+                                <option value="war">Район проведения боевых действий</option>
+                                <option value="defence">Район глухой обороны</option>
+                                <option value="mobi">Район проведения мобилизации</option>
+                                <option value="borders">Район очередей на границе</option>
+                            </select>
+                        </div>    
+                        <div class="altitle">
+                            <input 
+                                type="text" 
+                                class="profile-city-line" 
+                                placeholder="Город"
+                            >
+                            <div class="after-line-title-8"></div>
+                        </div>
+                        <div class="altitle">
+                            <input 
+                                type="text" 
+                                class="profile-street-office"
+                                placeholder="Улица, дом, офис"
+                            >
+                            <div class="after-line-title-9"></div>
+                        </div>
+                        <input 
+                            id="regular-customer" 
+                            type="checkbox" 
+                            hidden
+                        >
+                        <label class="regular-customer" for="regular-customer">
+                            <div class="regular-customer-around">
+
+                            </div>
+                            <p class="regular-customer-description">Зарегистрироваться как постоянный покупатель</p>
+                        </label>
+                    </form>
+                    <div class="delivery-wrapper">
+                        <h3 class="delivery-title">Доставка</h3>
+                        <input 
+                            id="pickup" 
+                            type="radio" 
+                            name="delivery" 
+                            checked 
+                            hidden
+                        >
+                        <input 
+                            id="home-delivery" 
+                            type="radio" 
+                            name="delivery" 
+                            hidden
+                        >
+                        <label class="pickup" for="pickup">
+                            <div class="pickup-description">
+                                <h4 class="delivery">Самовывоз по адресу:</h2>
+                                <p class="delivery-address">Московская область, Подольский район</p>
+                                <p class="delivery-description">Самовывоз из ближашей точки выдачи (список точек доступен в виде списка)</p>
+                            </div>
+                            <div class="pickup-price">
+                                0 ₽
+                            </div>
+                        </label>
+                        <label class="home-delivery" for="home-delivery">
+                            <div class="home-delivery-description">
+                                <h4 class="delivery">Доставка</h2>
+                                <p class="delivery-address">по Москве и МО (до 10км от МКАД) по адресу клиента или в транспортную компанию</p>
+                                <p class="delivery-description">При сумме заказа более 30000 рублей, доставка осуществляется бесплатно</p>
+                            </div>
+                            <div class="home-delivery-price">
+                                480 ₽
+                                <p class="home-delivery-price-description">Приблизительное время: <br>
+                                    7 марта — 8 марта 2021</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="total-price-and-nds-wrapper">
+                        <h2 class="total-price-and-nds-wrapper-title">Итого:	2 902 ₽, включая НДС 18%</h2>
+                        <input class="order-comment" type="text" placeholder="Вы можете добавить комментарий к своему заказу">
+                    </div>
+                    <div class="submit-order-wrapper">
+                        <a href="./basket-3.html" class="submit-order-btn">
+                            Оформить заказ
+                        </a>
+                        <p class="submit-order-description">Нажимая кнопку, вы соглашаетесь 
+                            на обработку своих персональных данных</p>
+                    </div>
+                </div>
+                <div class="customer-data-my-order">
+                    <h3 class="customer-data-my-order-title">Мой заказ</h3>
+                    <div class="my-order-product">
+                        <div class="my-order-product-description">
+                            <h6 class="my-order-product-name">Блокада-Антиклоп</h6>
+                            <p class="my-order-product-description">флакон 50 мл. × 50 шт</p>
+                        </div>
+                        <p class="my-order-product-price">2 902 ₽</p>
+                    </div>
+                    <div class="my-order-total-price-wrappper">
+                        <a href="./basket-1.html" class="change-my-order">Изменить</a>
+                        <p class="my-order-total-price">Итого: 2 902 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-main-container">
+            <div class="footer-main-container-top">
+                <div class="footer-top-descrtiption">
+                    <h4 class="footer-top-title">У вас остались вопросы?</h4>
+                    <p class="foot-top-desc">Ответим в течение 10 минут</p>
+                </div>
+                <form class="footer-top-form">
+                    <input 
+                        type="text" 
+                        placeholder="Ваше имя" 
+                        class="form-name"
+                    >
+                    <input 
+                        type="tel" 
+                        placeholder="Телефон" 
+                        class="form-number"
+                    >
+                    <button 
+                        type="submit" 
+                        class="form-send"
+                    >
+                    Заказать звонок
+                    </button>
+                </form>
+            </div>
+            <div class="footer-main-container-bot">
+                <div class="footer-no-main-container-bot">
+                    <div class="footer-bot-main-desc">
+                        <img 
+                            src="./assets/svg/footer-logo.svg" 
+                            alt="Пестэкс-ЛОГО"
+                            class="footer-logo-img"
+                        >
+                        <p class="footer-bot-desc">Информация, размещенная на сайте, представлена для ознакомления и не является публичной офертой <br> <br>2020 © Все права защищены</p>
+                    </div>
+                    <div class="footer-bot-list">
+                        <h5>Меню</h5>
+                        <ul class="footer-list-menu">
+                            <li><a href="./catalog.html" class="footer-link">Каталог товаров</a></li>
+                            <li><a href="./about_Us.html" class="footer-link">О Нас</a></li>
+                            <li><a href="./news.html" class="footer-link">Новости и акции</a></li>
+                            <li><a href="./coop_prices.html" class="footer-link">Сотрудничество и цены</a></li>
+                            <li><a href="./ad-materials.html" class="footer-link">Рекламные материалы</a></li>
+                            <li><a href="./contact.html"  class="footer-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bot-contacts">
+                        <h5>Контакты</h5>
+                        <p class="footer-bot-contacts-phone">8-800-55-35-35</p>
+                    </div>
+                    <div class="footer-class-sm">
+                        <h5>Социальные сети</h5>
+                        <div class="footer-media-igms">
+                            <img 
+                                src="./assets/svg/insta.svg" 
+                                alt="inst"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/facebook.svg" 
+                                alt="facebook"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/vkontakte.svg" 
+                                alt="vkontakte"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/youtube.svg" 
+                                alt="youtube"
+                                class="social-media-img"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,316 @@
+.profile-all-container {
+    margin-bottom: 107px;
+    width: 1171px;
+}
+.profile-head {
+    border-bottom: 1px solid #E4E9F2;
+    margin-top: 12px;
+    width: 578px;
+    height: 121px;
+}
+.profile-main-title {
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48.41px;
+    width: 251px;
+    height: 48px;
+}
+.profile-breadcrumbs {
+    display: flex;
+    gap: 22px;
+    margin-top: 22px;
+}
+.profile-data-title::before {
+    content: url(./assets/svg/lk-profile-icon.svg);
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+.profile-my-order {
+    color: #959FB2;
+}
+.profile-my-order::before {
+    content: url(./assets/svg/basket-profile.svg);
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+.profile-data-title,
+.profile-my-order {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20.57px;
+}
+.profile-main-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 43px;
+}
+.profile-contact-info {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.05px;
+}
+.profile-contact-info-desc {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.6px;
+    margin-top: 9px;
+    height: 40px;
+}
+.altitle {
+    position: relative;
+}
+.profile-organization:focus ~ .after-line-title-1::before {
+    position: absolute;
+    display: block;
+    content: 'Организация';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 12px;
+    left: 31px;
+}
+.profile-user-name:focus ~ .after-line-title-2::before {
+    position: absolute;
+    display: block;
+    content: 'Контактное лицо';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-user-job:focus ~ .after-line-title-3::before {
+    position: absolute;
+    display: block;
+    content: 'Должность';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-user-phonenumber:focus ~ .after-line-title-4::before {
+    position: absolute;
+    display: block;
+    content: 'Телефон';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-user-email:focus ~ .after-line-title-5::before {
+    position: absolute;
+    display: block;
+    content: 'Эл. почта';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-city-line:focus ~ .after-line-title-8::before {
+    position: absolute;
+    display: block;
+    content: 'Город';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-street-office:focus ~ .after-line-title-9::before {
+    position: absolute;
+    display: block;
+    content: 'Улица, дом, офис';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    opacity: 1;
+    transition: .3s;
+    top: 2px;
+    left: 31px;
+}
+.profile-organization {
+    margin-top: 24px;
+}
+.profile-user-name,
+.profile-user-job,
+.profile-user-phonenumber,
+.profile-user-email,
+.profile-city-line,
+.profile-street-office {
+    margin-top: 14px;
+}
+.profile-organization,
+.profile-user-name,
+.profile-user-job,
+.profile-user-phonenumber,
+.profile-user-email,
+.profile-city-line,
+.profile-street-office {
+    display: flex;
+    align-items: center;
+    background-color: #F7F9FC;
+    box-sizing: border-box;
+    border: 1px solid #E4E9F2;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.57px;
+    border-radius: 16px;
+    padding-left: 31px;
+    width: 679px;
+    height: 70px;
+}
+.profile-organization:focus,
+.profile-user-name:focus,
+.profile-user-job:focus,
+.profile-user-phonenumber:focus,
+.profile-user-email:focus,
+.profile-city-line:focus,
+.profile-street-office:focus {
+    outline: none;
+    color: rgba(16, 20, 38, 1);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.57px;
+    background-color: #ffffff;
+    border: 1px solid #959FB3;
+}
+.profile-organization:focus::-webkit-input-placeholder,
+.profile-user-name:focus::-webkit-input-placeholder,
+.profile-user-job:focus::-webkit-input-placeholder,
+.profile-user-phonenumber:focus::-webkit-input-placeholder,
+.profile-user-email:focus::-webkit-input-placeholder,
+.profile-city-line:focus::-webkit-input-placeholder,
+.profile-street-office:focus::-webkit-input-placeholder {
+    transition: .3s;
+    color: transparent;
+}
+.profile-adress-title {
+    border-top: 1px solid #E4E9F2;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.05px;
+    margin-top: 54px;
+    padding-top: 43px;
+    width: 679px;
+    height: 72px;
+}
+.profile-country-selection {
+    margin-top: 23px;
+}
+.profile-region-selection {
+    margin-top: 14px;
+}
+.profile-country-selection,
+.profile-region-selection {
+    display: flex;
+    align-items: center;
+    color: #101426;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.57px;
+    background-color: #ffffff;
+    border: 1px solid #959FB3;
+    border-radius: 16px;
+    outline: none;
+    padding-left: 31px;
+    width: 679px;
+    height: 70px;
+}
+.section-compl-before {
+    position: relative;
+}
+.after-line-title-6:before {
+    position: absolute;
+    display: block;
+    content: 'Страна';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    top: 11px;
+    left: 31px;
+}
+.after-line-title-7::before {
+    position: absolute;
+    display: block;
+    content: 'Регион';
+    color: #101426;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    top: 2px;
+    left: 31px;
+}
+.profile-save-the-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: linear-gradient(225deg, #40C6FF 0%, #4086F1 50.52%, #8458FF 100%);
+    box-shadow: 0px 12px 20px -8px rgba(0, 41, 255, 0.4), inset 0px 6px 19px rgba(255, 255, 255, 0.45);
+    border-radius: 48px;
+    cursor: pointer;
+    margin-top: 39px;
+    width: 308px;
+    height: 76px;
+}
+.prodile-save-the-data-text {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700s;
+    line-height: 20.57px;
+}
+
+.footer-main-container {
+    margin-top: 0px;
+}

@@ -1,0 +1,99 @@
+.ad-materials-wrapper{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    width: 1171px;
+}
+.ad-materials-title{
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+}
+.ad-materials-nav{
+    display: flex;
+    background: #F1F4F9;
+    border-radius: 6px;
+    padding: 2px;    
+    margin-top: 27px;
+    width: 591.4px;
+}
+.ad-materials-nav-content{
+    display: block;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #576077;
+    padding: 16px 26px 18px;
+}
+#product-catalog:checked ~ label:nth-child(4),
+#product-layouts:checked ~ label:nth-child(5),
+#video-reviews:checked ~ label:nth-child(6){
+    background-color: #ffffff;
+    color: #101426;
+}
+
+.ad-materials{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+}
+.ad-materials-flyer{
+    border-radius: 16px;
+    transition: all .3s;
+    width: 380px;
+    height: 271px;
+}
+.ad-materials-flyer:hover{
+    box-shadow: 0px 12px 28px rgba(40, 42, 43, 0.12);
+}
+.ad-materials-flyer-img{
+
+    border-radius: 16px 16px 0 0;    
+    width: 380px;
+    height: 182px;
+}
+.ad-materials-flyer-description-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -5px;
+    box-sizing: border-box;
+    border-radius: 0 0 16px 16px;
+    border: 1px solid #E4E9F2;
+    border-top: none;
+    padding: 20px 26.5px;
+    height: 90px;
+}
+.ad-materials-flyer-description{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #959FB3;
+
+}
+.flyer-product-name{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #373E54;
+}
+.go-to-materials{
+    display: flex;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #EBEFFF;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.go-to-materials::before{
+    content: url(./assets/svg/ad-materials-arrow.svg);
+    width: 25px;
+    height: 25px;
+}
+.go-to-materials:hover{
+    background: #e4eaff;
+}

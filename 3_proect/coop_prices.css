@@ -1,0 +1,67 @@
+.main-section-cp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 1171px;
+    height: 1214px;
+}
+.cp-main-title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48.41px;
+    width: 468px;
+    height: 48px;
+}
+.cp-top-inner-desc {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28.9px;
+    margin-top: 15px;
+    width: 1171px;
+    height: 149px;
+}
+.cp-main-container {
+    background-image: url(./assets/coop_prices_main_pct.jpg);
+    background-size: 1171px 400px;
+    border-radius: 24px;
+    margin-top: 27px;
+    width: 1171px;
+    height: 400px;
+}
+.download-cp-files {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #3965FF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    cursor: pointer;
+    margin-top: 163px;
+    margin-left: 442px;
+    width: 287px;
+    height: 74px;
+}
+.download-cp-files:hover {
+    background: linear-gradient(225deg, #40C6FF 0%, #4086F1 50.52%, #8458FF 100%);
+    color: #ffffff;
+    transition: .3s;
+}
+.cp-bot-desc {
+    margin-top: 31px;
+}
+.cp-bot-inner-desc {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28.9px;
+    width: 1081px;
+    height: 467px;
+}
+.cp-bot-inner-desc-ref {
+    text-decoration: none;
+    color: #3965FF;
+    font-weight: 500;
+}

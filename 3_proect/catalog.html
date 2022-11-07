@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta 
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Каталог</title>
+    <link 
+        rel="stylesheet" 
+        href="./main.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./header.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./about_Us.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./catalog.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./footer.css"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" 
+        rel="stylesheet"
+    >
+</head>
+<body>
+    <div class="main-conteiner">
+        <header>
+            <div class="header-main-wrapper">
+                <div class="header-main">
+                    <a href="./main.html">
+                        <img 
+                            class="logo"
+                            src="./assets/svg/logo.svg" 
+                            alt="logo"
+                        >
+                    </a>
+                    <div class="lk_number_basket-wrapper">
+                        <a href="./profile.html" class="lk">
+                            <button class="lk-button"> 
+                                <img 
+                                    class="header-img" 
+                                    src="./assets/lk-ava.jpg" 
+                                    alt="avatar"
+                                >
+                            </button>
+                            <div class="title-wrapper">
+                                <p class="header-title">Мой Кабинет</p>
+                                <p class="header-description come-in">Войти</p>
+                            </div>
+                        </a>
+                        <div class="number">
+                            <img 
+                                class="header-img" 
+                                src="./assets/telefon.jpg" 
+                                alt="telefon"
+                            >
+                            <div class="title-wrapper">
+                                <p class="header-title">8 904 771-14-30</p>
+                                <p class="header-description">Пн-Чт 9–18, Пт 9–17</p>
+                            </div>
+                        </div>
+                        <a href="./basket-1.html" class="basket">
+                            <button class="basket-img-wrapper">
+                                <img src="./assets/svg/basket.svg" alt="basket">
+                            </button>
+                            <div class="title-wrapper">
+                                <p class="header-title">Корзина</p>
+                                <p class="header-description">0 ₽</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-wrapper">
+                <div class="header-nav">
+                    <form 
+                        class="search"
+                        action=""
+                        method="get"
+                    >
+                        <a 
+                            class="search-button" 
+                            href="./catalog.html"
+                        >
+                            <img src="./assets/svg/katalog.svg" alt="каталог">
+                            <p class="catalog">Каталог</p>
+                        </a>                                
+                        <input  
+                            class="search-field" 
+                            type="search" 
+                            placeholder="Найти товар"
+                        >
+                    </form>
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="list">
+                                <a 
+                                    href="./about_Us.html" 
+                                    class="nav-link"
+                                >
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./news.html" 
+                                    class="nav-link"
+                                >
+                                    Новости и акции
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./coop_prices.html" 
+                                    class="nav-link"
+                                >
+                                    Сотрудничество и цены
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./ad-materials.html" 
+                                    class="nav-link"
+                                >
+                                    Рекламные материалы
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a 
+                                    href="./contact.html" 
+                                    class="nav-link"
+                                >
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="torso">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs-link" href="./main.html">Главная </a><a class="breadcrumbs-link" href="#">&#62; Каталог</a><span class="breadcrumbs-this-page"> &#62; Акарициды</span>
+            </div>
+            <div class="catalog-wrapper">
+                <div class="nav-catalog">
+                    <input 
+                        type="checkbox" 
+                        name="catalog-filters" 
+                        id="catalog-filters-button"
+                    >
+                    <div id="catalog-filters-wrapper">
+                        <label for="catalog-filters-button" class="catalog-filters-button">Фильтр товаров</label>
+                        <div class="catalog-filters-open">
+                            <form class="catalog-filters">
+                                <div class="price-wrapper">
+                                    <p>Цена, руб</p>
+                                    <div class="price">
+                                        <label>от<input type="text" class="min-price"></label>
+                                        <label>до<input type="text" class="max-price"></label>
+                                    </div>
+                                    <input type="range" class="price-slider" min="1" max="100" value="30">
+                                </div>
+                                <input type="checkbox" id="check-filter-1">
+                                <input type="checkbox" id="check-filter-2">
+                                <input type="checkbox" id="check-filter-3">
+                                <input type="checkbox" id="check-filter-4">
+                                <input type="checkbox" id="check-filter-5">
+                                <input type="checkbox" id="check-filter-6">
+                                <input type="checkbox" id="check-filter-7">
+                                <input type="checkbox" id="check-filter-8">
+                                <input type="checkbox" id="check-filter-9">
+                                <input type="checkbox" id="check-filter-10">
+                                <input type="checkbox" id="check-filter-11">
+                                <div class="check-filters-wrapper">
+                                    <p>Препаративная форма</p>
+                                    <label for="check-filter-1">
+                                        Порошок
+                                    </label>
+                                    <label for="check-filter-2">
+                                        Парафинированный блок
+                                    </label>
+                                    <label for="check-filter-3">
+                                        Жидкость
+                                    </label>
+                                    <label for="check-filter-4">
+                                        Гель
+                                    </label>
+                                    <label for="check-filter-5">
+                                        Сухой гель
+                                    </label>
+                                    <label for="check-filter-6">
+                                        Зерновая приманка
+                                    </label>
+                                    <label for="check-filter-7">
+                                        Гранулы
+                                    </label>
+                                    <label for="check-filter-8">
+                                        Паста
+                                    </label>
+                                    <label for="check-filter-9">
+                                        Мягкие брикеты
+                                    </label>
+                                    <label for="check-filter-10">
+                                        Пеллеты
+                                    </label>
+                                    <label for="check-filter-11">
+                                        Гранулированная приманка
+                                    </label>
+                                </div>
+                                <button type="button" class="filter-submit">Фильтровать</button>
+                                <button type="reset" class="filter-reset">Сбросить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <ul class="catalog-list">
+                        <li class="catalog-category">
+                            <a href="">Акарициды</a> 
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Продукция производства <br> АО "НКФ "РЭТ"</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Родентициды </a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Инсектициды </a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Ларвициды</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Педикулициды</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Клеевые средства отлова</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Репелентные средства и устройства</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Средства для устранения запаха</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Оборудование</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Средства индивидуальной защиты</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Дезинфектанты</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Приспособления для отпугивания птиц</a>
+                        </li>
+                        <li class="catalog-category">
+                            <a href="">Специализированная литература</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-goods-wrapper">
+                    <div class="catalog-goods-header">
+                        <h1 class="catalog-goods-title">
+                            Акарециды
+                        </h1>
+                        <ul class="checked-catalog-filters">
+                            <li class="checked-catalog-filter-first">Жидкости</li>
+                            <li class="checked-catalog-filter-second">Гели</li>
+                            <li class="checked-catalog-filter-third">Порошки</li>
+                        </ul>
+                        <div class="catalog-goods-sort">
+                            <p class="catalog-goods-sort-by">Сортировать <a href="#" class="sorting-by-ref">по популярности</a></p>
+                            <div class="catalog-viewing-by">
+                                <p class="label-list-all-title">Показывать по</p>
+                                <div class="label-list-all">
+                                    <input type="radio" class="checkbox-list-22" name="name1" id="555" checked>
+                                    <label for="555" class="label-list-20">
+                                        20
+                                    </label>
+                                    <input type="radio" class="checkbox-list-40" name="name1" id="666">    
+                                    <label for="666" class="label-list-40">
+                                        40    
+                                    </label>
+                                    <input type="radio" class="checkbox-list-60" name="name1" id="777">
+                                    <label for="777" class="label-list-60">
+                                        60
+                                    </label>
+                                </div>
+                                <a href="./catalog-line.html" class="ref-to-the-dots">
+                                <img 
+                                    src="./assets/svg/grey_stripes_catalog.svg" 
+                                    alt="≡"
+                                    class="inactive-catalog-list"
+                                >
+                                </a>
+                                <a href="./catalog.html" class="ref-to-the-dots">
+                                    <img 
+                                        src="./assets/svg/Blue_dots_catalog.svg" 
+                                        alt="..."
+                                        class="active-catalog-grid"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bot-catalog-and-paginator">
+                            <div class="bot-catalog-20">
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                                <a href="./goods_card.html" class="goods goods-hit">
+                                    <img 
+                                        src="./assets/anticlop-butilka.jpg" 
+                                        alt="Блокада Антиклоп"
+                                        class="goods-img"
+                                    >
+                                    <p class="goods-name">Блокада Антиклоп</p>
+                                    <h4 class="goods-title">205 ₽</h4>
+                                    <button class="buy-good-btn">В корзину</button>
+                                </a>
+                            </div>
+                            <div class="catalog-goods">
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-1 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-1" 
+                                    checked
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-2 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-2"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-3 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-3"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-4 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-4"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-5 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-5"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-6 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-6"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-7 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-7"
+                                >
+                                <input 
+                                    type="radio" 
+                                    class="radio-paginator-bot-1 radio-box-none-look" 
+                                    name="paginator-bot" 
+                                    id="bot-btn-1"
+                                >
+                                <div class="paginator-bot-main-container">
+                                    <label for="bot-btn-1" class="paginator-bot-number-1  radio-box-look">
+                                        1
+                                    </label>
+                                    <label for="bot-btn-2" class="paginator-bot-number-2  radio-box-look">
+                                        2
+                                    </label>
+                                    <label for="bot-btn-3" class="paginator-bot-number-3  radio-box-look">
+                                        3
+                                    </label>
+                                    <label for="bot-btn-4" class="paginator-bot-number-4  radio-box-look">
+                                        4
+                                    </label>
+                                    <label for="bot-btn-5" class="paginator-bot-number-5  radio-box-look">
+                                        5
+                                    </label>
+                                    <label for="bot-btn-6" class="paginator-bot-number-6  radio-box-look">
+                                        6
+                                    </label>
+                                    <label for="bot-btn-7" class="paginator-bot-number-7  radio-box-look">
+                                        7
+                                    </label>
+                                    <label for="bot-btn-1" class="paginator-arrow-1 paginator-arrow"></label>
+                                    <label for="bot-btn-2" class="paginator-arrow-2 paginator-arrow"></label>
+                                    <label for="bot-btn-3" class="paginator-arrow-3 paginator-arrow"></label>
+                                    <label for="bot-btn-4" class="paginator-arrow-4 paginator-arrow"></label>
+                                    <label for="bot-btn-5" class="paginator-arrow-5 paginator-arrow"></label>
+                                    <label for="bot-btn-6" class="paginator-arrow-6 paginator-arrow"></label>
+                                    <label for="bot-btn-7" class="paginator-arrow-7 paginator-arrow"></label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer-main-container">
+            <div class="footer-main-container-top">
+                <div class="footer-top-descrtiption">
+                    <h4 class="footer-top-title">У вас остались вопросы?</h4>
+                    <p class="foot-top-desc">Ответим в течение 10 минут</p>
+                </div>
+                <form class="footer-top-form">
+                    <input 
+                        type="text" 
+                        placeholder="Ваше имя" 
+                        class="form-name"
+                    >
+                    <input 
+                        type="tel" 
+                        placeholder="Телефон" 
+                        class="form-number"
+                    >
+                    <button 
+                        type="submit" 
+                        class="form-send"
+                    >
+                    Заказать звонок
+                    </button>
+                </form>
+            </div>
+            <div class="footer-main-container-bot">
+                <div class="footer-no-main-container-bot">
+                    <div class="footer-bot-main-desc">
+                        <img 
+                            src="./assets/svg/footer-logo.svg" 
+                            alt="Пестэкс-ЛОГО"
+                            class="footer-logo-img"
+                        >
+                        <p class="footer-bot-desc">Информация, размещенная на сайте, представлена для ознакомления и не является публичной офертой <br> <br>2020 © Все права защищены</p>
+                    </div>
+                    <div class="footer-bot-list">
+                        <h5>Меню</h5>
+                        <ul class="footer-list-menu">
+                            <li><a href="./catalog.html" class="footer-link">Каталог товаров</a></li>
+                            <li><a href="./about_Us.html" class="footer-link">О Нас</a></li>
+                            <li><a href="./news.html" class="footer-link">Новости и акции</a></li>
+                            <li><a href="./coop_prices.html" class="footer-link">Сотрудничество и цены</a></li>
+                            <li><a href="./ad-materials.html" class="footer-link">Рекламные материалы</a></li>
+                            <li><a href="./contact.html" class="footer-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bot-contacts">
+                        <h5>Контакты</h5>
+                        <p class="footer-bot-contacts-phone">8-800-55-35-35</p>
+                    </div>
+                    <div class="footer-class-sm">
+                        <h5>Социальные сети</h5>
+                        <div class="footer-media-igms">
+                            <img 
+                                src="./assets/svg/insta.svg" 
+                                alt="inst"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/facebook.svg" 
+                                alt="facebook"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/vkontakte.svg" 
+                                alt="vkontakte"
+                                class="social-media-img"
+                            >
+                            <img 
+                                src="./assets/svg/youtube.svg" 
+                                alt="youtube"
+                                class="social-media-img"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
