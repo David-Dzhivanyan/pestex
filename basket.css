@@ -195,6 +195,14 @@
     margin-right: 24px;
 }
 
+.basket-is-empty{
+    display: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 180%;
+    color: #373E54;
+    width: 1171px;
+}
 .amount-payable-wrapper{
     display: flex;
     justify-content: space-between;
