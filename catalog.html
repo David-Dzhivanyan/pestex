@@ -192,10 +192,9 @@
                                 <div class="price-wrapper">
                                     <p>Цена, руб</p>
                                     <div class="price">
-                                        <label>от<input type="text" class="min-price"></label>
-                                        <label>до<input type="text" class="max-price"></label>
+                                        <label>до<input type="number" class="max-price" value="3000"></label>
                                     </div>
-                                    <input type="range" class="price-slider" min="1" max="100" value="30">
+                                    <input type="range" class="price-slider" min="0" max="10000" value="3000">
                                 </div>
                                 <input type="checkbox" id="check-filter-1">
                                 <input type="checkbox" id="check-filter-2">
@@ -297,7 +296,7 @@
                 <div class="catalog-goods-wrapper">
                     <div class="catalog-goods-header">
                         <h1 class="catalog-goods-title">
-                            Акарециды
+                            Акарициды
                         </h1>
                         <ul class="checked-catalog-filters">
                             <li class="checked-catalog-filter-first">Жидкости</li>
@@ -668,5 +667,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/catalog.js"></script>
 </body>
 </html>
