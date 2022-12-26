@@ -177,7 +177,7 @@
                 href="./main.html"
                 >Главная 
                 </a>
-                <span class="breadcrumbs-this-page"> &#62; Поиск</span>
+                <span class="breadcrumbs-this-page"> &#62; Мой кабинет</span>
             </div>
             <div class="profile-all-container">
                 <div class="profile-head">
@@ -197,51 +197,49 @@
                         <input 
                             type="text" 
                             class="profile-organization"
-                            placeholder="Организация"
+                            id="profile-organization"
                         >
-                        <div class="after-line-title-1"></div>
+                        <label class="label-in-profile-form" for="profile-organization">Организация</label>
                     </div>
                     <div class="altitle">
                         <input 
                             type="text" 
                             class="profile-user-name"
-                            placeholder="Контактное лицо"
+                            id="profile-user-name"
                         >
-                        <div class="after-line-title-2"></div>
+                        <label class="label-in-profile-form" for="profile-user-name">Контактное лицо</label>
                     </div>
                     <div class="altitle">
                         <input 
                             type="text" 
                             class="profile-user-job"
-                            placeholder="Должность"
+                            id="profile-user-job"
                         >
-                        <div class="after-line-title-3"></div>
+                        <label class="label-in-profile-form" for="profile-user-job">Должность</label>
                     </div>
                     <div class="altitle">
                         <input 
                             type="tel" 
                             class="profile-user-phonenumber"
-                            placeholder="Телефон"
+                            id="profile-user-phonenumber"
                         >
-                        <div class="after-line-title-4"></div>
+                        <label class="label-in-profile-form" for="profile-user-phonenumber">Телефон</label>
                     </div>
                     <div class="altitle">
                         <input 
                             type="email" 
                             class="profile-user-email"
-                            placeholder="Эл. почта"
+                            id="profile-user-email"
                         >
-                        <div class="after-line-title-5"></div>
+                        <label class="label-in-profile-form" for="profile-user-email">Эл. почта</label>
                     </div>
                     <h3 class="profile-adress-title">Адрес</h3>
                     <div class="section-compl-before">
-                        <div class="after-line-title-6"></div>
                         <select 
                             name="country" 
                             id="country-select" 
                             class="profile-country-selection"
-                        >
-                            <option value="country">Страна</option>                        
+                        >                  
                             <option value="russia">Россия</option>
                             <option value="ukraine">Украина</option>
                             <option value="Kazaqstan">Казахстан</option>
@@ -249,13 +247,11 @@
                         </select>
                     </div>  
                     <div class="section-compl-before">
-                        <div class="after-line-title-7"></div>  
                         <select 
                             name="region" 
                             id="region-select" 
                             class="profile-region-selection"
-                        >
-                            <option value="region">Регион</option>                        
+                        >                  
                             <option value="war">Район проведения боевых действий</option>
                             <option value="defence">Район глухой обороны</option>
                             <option value="mobi">Район проведения мобилизации</option>
@@ -265,23 +261,23 @@
                     <div class="altitle">
                         <input 
                             type="text" 
-                            class="profile-city-line" 
-                            placeholder="Город"
+                            class="profile-city-line"
+                            id="profile-city-line"
                         >
-                        <div class="after-line-title-8"></div>
+                        <label class="label-in-profile-form" for="profile-city-line">Город</label>
                     </div>
                     <div class="altitle">
                         <input 
                             type="text" 
                             class="profile-street-office"
-                            placeholder="Улица, дом, офис"
+                            id="profile-street-office"
                         >
-                        <div class="after-line-title-9"></div>
+                        <label class="label-in-profile-form" for="profile-street-office">Улица, дом, офис</label>
                     </div>
-                    <a href="#" class="profile-save-the-data">
+                    <button class="profile-save-the-data">
                         <img src="./assets/svg/save-information.svg" alt="&#10003;">
                         <p class="prodile-save-the-data-text">Сохранить изменения</p>
-                    </a>
+                    </button>
                 </form>
             </div>
         </div>
@@ -364,5 +360,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/profile.js"></script>
 </body>
 </html>
