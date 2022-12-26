@@ -241,6 +241,9 @@
     width: 323px;
     height: 76px;
 }
+.go-to-checkout:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
+}
 .go-to-checkout::before{
     content: url(./assets/svg/basket-on-basket-btn.svg);
     margin-right: 13px;
@@ -633,6 +636,10 @@
     color: #ffffff;
     width: 307px;
     height: 76px;
+}
+.go-to-main:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
+
 }
 .go-to-main::before{
     content: url(./assets/svg/go-to-home-btn.svg);

@@ -60,6 +60,9 @@
     width: 223px;
     height: 62px;
 }
+.form-send:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
+}
 .footer-main-container-bot {
     display: flex;
     justify-content: center;

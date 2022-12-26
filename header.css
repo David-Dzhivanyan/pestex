@@ -108,6 +108,10 @@ header{
     height: 52px;
     margin: 9px 0 9px;
 }
+.search-button:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
+
+}
 .search-field{
     background-color: #F1F4F9;    
     border-radius: 32px;

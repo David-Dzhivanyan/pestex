@@ -93,6 +93,9 @@ body{
     height: 78px;
     margin-top: 29px;
 }
+.slide-more:hover{
+    background: linear-gradient(225deg, #FF3998 0%, #FF385C 57.81%, #FF6F32 100%);
+}
 .pagination{
     position: absolute;
     display: flex;
@@ -424,6 +427,9 @@ input[name="good-dot"] {
     width: 286px;
     height: 76px;
 }
+.go-catalog-goods:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
+}
 .go-catalog-description {
     font-size: 16px;
     font-weight: 300;
@@ -579,6 +585,9 @@ input[name="good-dot"] {
     margin-top: 27px;
     height: 76px;
     width: 302px;
+}
+.go-catalog-banner:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF 100%);
 }
 .go-catalog-banner-description{
     position: relative;
