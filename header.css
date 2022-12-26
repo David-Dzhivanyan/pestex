@@ -27,6 +27,7 @@ header{
     border-radius: 50%;
     width: 42px;
     height: 42px;
+    transition: all .2s;
 }
 .lk,
 .number,
@@ -34,12 +35,16 @@ header{
     display: flex;
     text-decoration: none;
 }
+.lk:hover .header-img{
+    box-shadow: 0px 12px 20px -8px rgba(0, 0, 0, 0.5), inset 0px 6px 19px rgba(255, 255, 255, 0.35);
+}
 .header-title{
     font-size: 19px;
     line-height: 23px;
     margin: 0;
     font-weight: 400;
 }
+
 .header-description{
     font-size: 13px;
     line-height: 19px;
@@ -61,6 +66,9 @@ header{
     box-shadow: 0px 12px 20px -8px rgba(255, 48, 48, 0.5), inset 0px 6px 19px rgba(255, 255, 255, 0.35);
     width: 42px;
     height: 42px;
+}
+.basket-img-wrapper:hover{
+    background: linear-gradient(225deg, #FF3998 0%, #FF385C 57.81%, #FF6F32 100%);
 }
 .lk-button{
     border: none;
@@ -167,8 +175,10 @@ header{
     margin: 23px 0 28px 0;
 }
 .nav-link:active,
-.nav-link:hover,
 .nav-link {
     text-decoration: none;
     color: black;
+}
+.nav-link:hover{
+    color: #4086F1;
 }
