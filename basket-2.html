@@ -202,6 +202,36 @@
                             У меня есть аккаунт
                         </label>
                     </div>
+                    <div class="sign-in-form-wrapper">
+                        <div class="sign-in-form-modal-window">
+                            <div class="sign-in-form-header">
+                                <h4 class="sign-in-form-header-title">Войти</h4>
+                                <button class="close-modal-window">&#10006;</button>
+                            </div>
+                            <form action="#" class="sign-in-form">
+                                <div class="sign-in-entry-field-wrapper">
+                                    <input 
+                                        type="text" 
+                                        class="sign-in-entry-field" 
+                                        name="email" 
+                                        id="login-email"
+                                    >
+                                    <label class="label-in-login-form" for="login-email">Эл. почта</label>
+                                </div>
+                                <div class="sign-in-entry-field-wrapper">
+                                    <input 
+                                        type="password" 
+                                        class="sign-in-entry-field"
+                                        name="password"
+                                        id="login-password"
+                                    >
+                                    <label class="label-in-login-form" for="login-password">Пароль</label>
+                                </div>
+                                <a href="./forgot_your_password.html" class="sign-in-forgot-password">>Забыли пароль?</a>
+                                <button class="sign-in-btn">Войти</button>
+                            </form>
+                        </div>
+                    </div>
                     <form action="" class="profile-main-form">
                         <h3 class="profile-contact-info">Контактная информация</h3>
                         <p class="profile-contact-info-desc">
@@ -450,5 +480,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/basket-2.js"></script>
 </body>
 </html>
