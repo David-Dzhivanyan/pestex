@@ -95,7 +95,7 @@
                             </button>
                             <div class="title-wrapper">
                                 <p class="header-title">Корзина</p>
-                                <p class="header-description">0 ₽</p>
+                                <p class="header-description">2902 ₽</p>
                             </div>
                         </a>
                     </div>
@@ -242,51 +242,49 @@
                             <input 
                                 type="text" 
                                 class="profile-organization"
-                                placeholder="Организация"
+                                id="profile-organization"
                             >
-                            <div class="after-line-title-1"></div>
+                            <label class="label-in-profile-form" for="profile-organization">Организация</label>
                         </div>
                         <div class="altitle">
                             <input 
                                 type="text" 
                                 class="profile-user-name"
-                                placeholder="Контактное лицо"
+                                id="profile-user-name"
                             >
-                            <div class="after-line-title-2"></div>
+                            <label class="label-in-profile-form" for="profile-user-name">Контактное лицо</label>
                         </div>
                         <div class="altitle">
                             <input 
                                 type="text" 
                                 class="profile-user-job"
-                                placeholder="Должность"
+                                id="profile-user-job"
                             >
-                            <div class="after-line-title-3"></div>
+                            <label class="label-in-profile-form" for="profile-user-job">Должность</label>
                         </div>
                         <div class="altitle">
                             <input 
                                 type="tel" 
                                 class="profile-user-phonenumber"
-                                placeholder="Телефон"
+                                id="profile-user-phonenumber"
                             >
-                            <div class="after-line-title-4"></div>
+                            <label class="label-in-profile-form" for="profile-user-phonenumber">Телефон</label>
                         </div>
                         <div class="altitle">
                             <input 
                                 type="email" 
                                 class="profile-user-email"
-                                placeholder="Эл. почта"
+                                id="profile-user-email"
                             >
-                            <div class="after-line-title-5"></div>
+                            <label class="label-in-profile-form" for="profile-user-email">Эл. почта</label>
                         </div>
                         <h3 class="profile-adress-title">Адрес</h3>
                         <div class="section-compl-before">
-                            <div class="after-line-title-6"></div>
                             <select 
                                 name="country" 
                                 id="country-select" 
                                 class="profile-country-selection"
-                            >
-                                <option value="country">Страна</option>                        
+                            >                  
                                 <option value="russia">Россия</option>
                                 <option value="ukraine">Украина</option>
                                 <option value="Kazaqstan">Казахстан</option>
@@ -294,13 +292,11 @@
                             </select>
                         </div>  
                         <div class="section-compl-before">
-                            <div class="after-line-title-7"></div>  
                             <select 
                                 name="region" 
                                 id="region-select" 
                                 class="profile-region-selection"
-                            >
-                                <option value="region">Регион</option>                        
+                            >                  
                                 <option value="war">Район проведения боевых действий</option>
                                 <option value="defence">Район глухой обороны</option>
                                 <option value="mobi">Район проведения мобилизации</option>
@@ -310,18 +306,18 @@
                         <div class="altitle">
                             <input 
                                 type="text" 
-                                class="profile-city-line" 
-                                placeholder="Город"
+                                class="profile-city-line"
+                                id="profile-city-line"
                             >
-                            <div class="after-line-title-8"></div>
+                            <label class="label-in-profile-form" for="profile-city-line">Город</label>
                         </div>
                         <div class="altitle">
                             <input 
                                 type="text" 
                                 class="profile-street-office"
-                                placeholder="Улица, дом, офис"
+                                id="profile-street-office"
                             >
-                            <div class="after-line-title-9"></div>
+                            <label class="label-in-profile-form" for="profile-street-office">Улица, дом, офис</label>
                         </div>
                         <input 
                             id="regular-customer" 
@@ -367,14 +363,14 @@
                                 <p class="delivery-description">При сумме заказа более 30000 рублей, доставка осуществляется бесплатно</p>
                             </div>
                             <div class="home-delivery-price">
-                                480 ₽
+                                <p> 480 ₽</p>
                                 <p class="home-delivery-price-description">Приблизительное время: <br>
                                     7 марта — 8 марта 2021</p>
                             </div>
                         </label>
                     </div>
                     <div class="total-price-and-nds-wrapper">
-                        <h2 class="total-price-and-nds-wrapper-title">Итого:	2 902 ₽, включая НДС 18%</h2>
+                        <h2 class="total-price-and-nds-wrapper-title">Итого:	<span> 2902 ₽</span>, включая НДС 18%</h2>
                         <input class="order-comment" type="text" placeholder="Вы можете добавить комментарий к своему заказу">
                     </div>
                     <div class="submit-order-wrapper">
@@ -481,5 +477,6 @@
         </footer>
     </div>
     <script src="./js/basket-2.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 </html>

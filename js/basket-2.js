@@ -27,7 +27,7 @@ closeModalWindow.addEventListener('click', function(){
         modalWindowWrapper.style.display = "none";
     },400);
 });
-inputInModalWindow.forEach(function(item,index){
+inputInModalWindow.forEach(function(item){
     item.addEventListener('focus',function(){
         this.nextElementSibling.style.top = "6px";
         this.nextElementSibling.style.backgroundColor = "white";
@@ -36,16 +36,28 @@ inputInModalWindow.forEach(function(item,index){
         this.style.border = "1px solid #959FB3";
     });
     item.addEventListener('blur',function(){
-        if(item.value == ""){
+        if(item.value === ""){
             this.nextElementSibling.style.top = "39.5px";
             this.nextElementSibling.style.backgroundColor = "";
             this.nextElementSibling.style.fontSize = "18px";
             this.style.backgroundColor = "#F7F9FC";
             this.style.border = "1px solid #E4E9F2";
         }
-        if(item.value !== ""){
-            this.style.backgroundColor = "white";
-            this.style.border = "1px solid #959FB3";
-        }
     });
 });
+
+const homeDelivery = document.querySelector('.home-delivery'),
+    pickup = document.querySelector('.pickup'),
+    totalPrice = document.querySelector('.total-price-and-nds-wrapper-title').firstElementChild;
+homeDelivery.addEventListener('click',function(){
+    if(document.querySelector('#home-delivery').checked !== true){
+        let shippingCost = +document.querySelector('.home-delivery-price').firstElementChild.textContent.slice(0,-1);
+        totalPrice.textContent = +totalPrice.textContent.slice(0,-1) + shippingCost + ' ₽';
+    }
+});
+pickup.addEventListener('click',function(){
+    if(document.querySelector('#pickup').checked !== true){
+        let shippingCost = +document.querySelector('.home-delivery-price').firstElementChild.textContent.slice(0,-1);
+        totalPrice.textContent = +totalPrice.textContent.slice(0,-1) - shippingCost + ' ₽';
+    }
+})

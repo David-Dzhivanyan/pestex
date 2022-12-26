@@ -303,6 +303,7 @@
 .regular-customer{
     display: flex;
     margin-top: 26px;
+    cursor: pointer;
 }
 .regular-customer-around{
     border: 2px solid #D2D4D9;
@@ -356,6 +357,7 @@
     box-sizing: border-box;
     border: 1px solid #E4E9F2;;
     border-radius: 16px;
+    cursor: pointer;
     padding: 22px 33px 0 60px;
     margin-bottom: 20px;
     width: 679px;
@@ -404,6 +406,7 @@
     box-sizing: border-box;
     border: 1px solid #E4E9F2;;
     border-radius: 16px;
+    cursor: pointer;
     transition: all 0.2s;
     padding: 22px 33px 0 60px;
     width: 679px;
@@ -492,6 +495,9 @@
     margin: 0 22px 76px 0;
     width: 258px;
     height: 76px;
+}
+.submit-order-btn:hover{
+    background: linear-gradient(225deg, #8458FF 0%, #4086F1 50.52%, #40C6FF  100%);
 }
 .submit-order-btn::before{
     content: url(./assets/svg/basket-on-basket-btn.svg);
