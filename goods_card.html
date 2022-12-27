@@ -174,6 +174,10 @@
                 <a class="breadcrumbs-link" href="./catalog.html"> &#62; Акорициды</a>
                 <span class="breadcrumbs-this-page"> &#62; Концентраты</span>
             </div>
+            <div class="item-added-to-cart-wrapper">
+                <p class="item-added-to-cart-description">Товар <a href="./goods_card.html">Ракумин порошок</a> добавлен в <a href="./basket-1.html">корзину!</a></p>
+                <button class="close-item-added-to-cart">×</button>
+            </div>
             <div class="card-product">
                 <input 
                     type="radio" 
@@ -205,7 +209,7 @@
                     <p class="mini-product-description">Средство «Ракумин» представляет собой мелкодисперсный порошок серого цвета, содержащий в качестве ДВ – (куматетралин – 0,75%.). Срок годности средства – 2 года. Биологическая активность подтвердила...</p>
                     <div class="product-price-wrapper">
                         <div class="actual-price-wrapper">
-                            <h2 class="actual-price">340 ₽/кг</h2>
+                            <h2 class="actual-price"><span>340</span> ₽/кг</h2>
                             <p class="price-description">Цена включает НДС 20%</p>
                         </div>
                         <div class="old-price-wrapper">
@@ -217,15 +221,15 @@
                         <input id="counter-product" type="number">
                         <form class="go-to-basket">
                             <label for="counter-product">
-                                <div class="change-amount-product minus">
-
+                                <div class="change-amount-product">
+                                    <div class="minus"></div>
                                 </div>
-                                <span class="amount-products">0</span>
-                                <div class="change-amount-product plus">
-
+                                <span class="amount-products">1</span>
+                                <div class="change-amount-product">
+                                    <div class="plus"></div>
                                 </div>
                             </label>
-                            <button class="go-to-basket-btn"> в корзину</button>
+                            <button type="button" class="go-to-basket-btn"> в корзину</button>
                         </form>
                         <a class="order-btn" href="#">
                             Заказать в один клик
@@ -659,5 +663,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/goods-card.js"></script>
 </body>
 </html>

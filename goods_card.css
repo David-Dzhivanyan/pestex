@@ -1,9 +1,44 @@
+.item-added-to-cart-wrapper{
+    display: none;
+    justify-content: space-between;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 32px 0 0px;
+    padding: 10px 15px 10px;
+    width: 1171px;
+    height: 51px;
+}
+.item-added-to-cart-description{
+    color: #3c763d;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.item-added-to-cart-description > a{
+    text-decoration: none;
+    color: #3965ff;
+}
+.close-item-added-to-cart{
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 21px;
+    color:#3c763d;
+    opacity: 0.75;
+    cursor: pointer;
+}
+.close-item-added-to-cart:hover{
+    opacity: 1;
+}
+
 .card-product{
     display: flex;
     width: 1171px;
-    margin-top: 32px;
     border-bottom: 1px solid #E4E9F2;
-
+    margin-top: 20px;
 }
 .card-product > input{
     position: absolute;
@@ -140,6 +175,8 @@
     justify-content: space-between;
     background-color: #3965ff;
     border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
     width: 297px;
     height: 64px;
 }
@@ -153,16 +190,13 @@
     cursor: pointer;
     background-color: #1d46d6;
     border-radius: 8px;
-    margin-left: 10px;
-    margin-top: 10px;
     width: 44px;
     height: 44px;
 }
 .change-amount-product:hover{
     background-color: #254bd4;
 }
-.minus::after{
-    content: '';
+.minus{
     position: absolute;
     top: 21px;
     left: 14px;
@@ -187,24 +221,30 @@
     height: 16px;
 }
 .amount-products{
+    display: flex;
+    align-items: center;
     font-weight: 300;
     font-size: 19px;
     line-height: 23px;
     color: #ffffff;
     text-align: center;
-    margin: 21px 4px 0 14px;
 }
 .go-to-basket-btn{
     border: none;
     outline: none;
-    cursor: pointer;
     background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
     color: #ffffff;
+    transition: all 0.3s;
     font-weight: 700;
     font-size: 19px;
-    line-height: 60%;
-    margin-right: 32px;
-    height: 64px;
+    padding: 12px 18px;
+}
+.go-to-basket-btn:hover{
+    background-color: #1d46d6;
 }
 .order-btn{
     text-decoration: none;
@@ -217,8 +257,13 @@
     font-weight: 500;
     font-size: 19px;
     line-height: 60%;
+    transition: all 0.3s;
     width: 263px;
     height: 64px;
+}
+.order-btn:hover{
+    background-color: #3965ff;
+    color: white;
 }
 
 .product-info-wrapper{
